@@ -47,7 +47,7 @@ header {
     list-style: none;
 }
 
-.navbar-items:last-child {
+.cart {
     position: relative;
 }
 
@@ -78,10 +78,6 @@ header {
 /* banner styles */
 .banner {
     height: 475px;
-    background-image: url("../images/Circle-design.svg");
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: contain;
 
     display: flex;
     align-items: center;
@@ -120,6 +116,55 @@ header {
     cursor: pointer;
 }
 
+.banner-img {
+    max-width: 475px;
+    height: 475px;
+    background-image: url("../images/Circle-design.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: grid;
+    place-items: center;
+}
+
 .banner-img img {
-    width: 100%;
+    width: 90%;
+}
+
+/* header mobile styles */
+@media screen and (max-width: 992px) {
+    header {
+        padding: 0 1rem;
+    }
+    .navbar,
+    .navbar-items{
+        flex-direction: column;
+    }
+
+    .navbar {
+        gap: 1rem;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+
+    .tagline {
+        font-size: 2rem;
+    }
+
+    .banner {
+        height: auto;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .banner-img {
+        text-align: center;
+        background-position: center;
+    } 
+
+    .banner-img img {
+        width: 85%;
+    }
 }
