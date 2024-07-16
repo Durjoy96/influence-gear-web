@@ -30,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0 0;
+    padding: 50px 0 50px;
 }
 
 .brand-name {
@@ -42,8 +42,13 @@ header {
 
 .navbar-items {
     display: flex;
+    align-items: center;
     gap: 2rem;
     list-style: none;
+}
+
+.navbar-items:last-child {
+    position: relative;
 }
 
 .navbar-item-link {
@@ -52,4 +57,19 @@ header {
     font-weight: 600;
     line-height: 24px;
     color: var(--base-content);
+}
+
+.cart-circle {
+    width: 12px;
+    height: 12px;
+    background-color: var(--primary);
+    border: 2px solid var(--base-100);
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+.fa-cart-shopping {
+    font-size: 22px;
 }
