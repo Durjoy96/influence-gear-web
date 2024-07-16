@@ -303,3 +303,24 @@ main {
     line-height: 24px;
 }
 
+/* collection tablet screen styles*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .collection {
+        padding: 0 1rem;
+    }
+
+    .product-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* collection mobile screen styles */
+@media screen and (max-width: 576px) {
+    .collection {
+        padding: 0;
+    }
+
+    .product-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
